@@ -1,0 +1,138 @@
+/* Gallery */
+
+.Gallery {
+	margin: 10px 50px 10px 50px;
+}
+.Gallery img {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+	padding: 20px;
+	filter: opacity(70%);
+	transition: 1s;
+}
+.Gallery img:hover {
+	filter: opacity(150%);
+	transform: scale(1.1);
+	border-radius: 30px;
+}
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+/* The Modal (Backgraound) */
+.modal {
+	display: none; 
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal-contant (image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+/* caption of Modal Image */
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
+@keyframes zoom {
+	from {transform: scale(0.1)}
+	to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f2f2f2;
+	font-size: 40px;
+	transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+	color: #f2f2f2;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* The Rotation Buttons */
+.rot-right {
+	position: absolute;
+	right: 15px;
+	border-width: 2px;
+	border-color: #f2f2f2;
+}
+.rot-right:hover,
+.rot-right:focus {
+	cursor: pointer;
+}
+.rot-left {
+	position: absolute;
+	left: 15px;
+}
+.rot-left:hover,
+.rot-left:focus {
+	cursor: pointer;
+}
+
+/* Responsive Columns */
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+	.modal-content {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+/* Clear Floats */
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
