@@ -18,7 +18,7 @@
 			<div class="container" id="border">
 			  <div class="Nav-stick">
 				<nav class="navbar navbar-expand-lg navbar-dark bg-black">
-				  <a class="navbar-brand" href="index.html">Website-Icon</a>
+				  <a class="navbar-brand" href="index.html"><img class="web_icon" src="files/images/icons/npa_website_icon.png"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
@@ -52,23 +52,25 @@
 
 		<main>
 			<div class="container" id="contain"> 
+			  <form id="contact-form" method="post" action="contact-form-handler.php">
 				<p>CONTACT US</p>
 				<div class="login">
-					<input type="text" name="" placeholder="Your Name" class="input">
-					<input type="text" name="" placeholder="Your Email" class="input">
+					<input type="text" name="" placeholder="Your Name" class="input" required>
+					<input type="text" name="" placeholder="Your Email" class="input" required>
 				</div>
 				<div class="subject"> 
-					<input type="text" name="" placeholder="Subject" class="input">
+					<input type="text" name="" placeholder="Subject" class="input" required>
 				</div>
 				<div class="msg"> 
-					<textarea class="area" placeholder="Leave a Message"></textarea>
+					<textarea class="area" placeholder="Leave a Message"></textarea required>
 				</div>
 				<div class="submit"> 
 					<a href="#" class="btn">Send Message</a>
 				</div>
+			  </form>
 			</div>
-		</main>
-
+		</main> 
+				
 		<footer>
 			<div class="footer"> 
 				©2018 NicholasPatersonART.com
