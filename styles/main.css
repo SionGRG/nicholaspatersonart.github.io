@@ -6,6 +6,9 @@
 	max-width: 50%;
 	text-align: center;
 }
+.web_icon {
+	width: 50px;
+}
 header nav h1 a {
 	text-shadow: 5px 7px #555;
 	text-decoration: none;
