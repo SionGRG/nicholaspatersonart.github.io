@@ -73,17 +73,10 @@ div ul li a {
 	border-radius: 10px;
 }
 .sticky {
-	position: -webkit-sticky;
+	position: -webkit-fixed;
  	position: sticky;
   	bottom: 0;
 }
-.sticky:scroll {
-	position: -webkit-fixed;
- 	position: fixed;
-  	bottom: 0;
-  	padding: 5px;
-}
-
 
 /* body */
 .body {
