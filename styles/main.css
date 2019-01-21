@@ -59,24 +59,11 @@ div ul li a {
 	overflow: hidden;
 	border: 2px solid #555; 
 	border-radius: 25px;
-/*	position: -webkit-sticky; /* Safari */
-/*	position: sticky; 
-	top: 0; */
 	width: 80%;
 }
-/* Sticky Navbar */
-.sticky {
-  position: fixed
-  top: 0;
-}
-.stick + .content {
-	padding-top: 60px;
-}
+
 /* footer */
 .footer {
-	position: fixed; 
-	left: 0;
-	bottom: 0;
 	width: 100%;
 	background-color: #222;
 	color: white;
@@ -85,6 +72,19 @@ div ul li a {
 	border: 1px solid #555;
 	border-radius: 10px;
 }
+.sticky {
+	position: -webkit-sticky;
+ 	position: sticky;
+  	bottom: 0;
+}
+.sticky:scroll {
+	position: -webkit-fixed;
+ 	position: fixed;
+  	bottom: 0;
+  	padding: 5px;
+}
+
+
 /* body */
 .body {
 	background-color: #333;
@@ -92,4 +92,25 @@ div ul li a {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
-
+/* intro */
+.intro {
+	color:#f2f2f2;
+	text-align: center;
+	max-width: 800px;
+	height: auto;
+	background: rgb(45, 45, 45);
+	margin: 10px auto 55px auto;
+	box-sizing: border-box;
+	padding: 15px 20px 20px 20px;
+	border-radius: 5px;
+}
+/* Biography */
+.bio {
+	max-width: 800px;
+	height: auto;
+	background: #222;
+	margin: 10px auto 55px auto;
+	box-sizing: border-box;
+	padding: 40px;
+	border-radius: 5px;
+}
